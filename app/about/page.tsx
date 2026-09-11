@@ -109,6 +109,12 @@ export default function AboutPage() {
                     Available for senior design roles
                   </p>
                 </div>
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                  <p className="font-sans font-light text-sm text-black">
+                    Starting a Master&apos;s in Illustration &amp; Animation — ESDESIGN Barcelona, Oct 2026
+                  </p>
+                </div>
                 <p className="font-sans font-light text-xs text-[#999] mt-1">
                   {SITE_CONFIG.location}
                 </p>

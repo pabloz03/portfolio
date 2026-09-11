@@ -85,6 +85,61 @@ export const caseStudies: CaseStudy[] = [
     featured: true,
   },
   {
+    id: "aurora",
+    slug: "aurora",
+    title: "Aurora Design System",
+    subtitle: "Design System Built and Maintained for Banrural — Powering Banking Platforms Across 5 Business Areas",
+    hook: { metric: "5 Business Areas", statement: "Built and maintain Aurora, Banrural's design system — 150+ components on a semantic token architecture, adopted across 5 business areas and every product team that ships on top of it." },
+    tags: ["Design Systems", "Component Architecture", "Cross-team Adoption"],
+    heroImage: "/images/case-aurora.svg",
+    year: "2023 – Present",
+    role: "Design Systems Lead",
+    timeline: "Ongoing — established 2023, actively maintained",
+    team: ["5 Business Area Engineering Teams", "Design System Contributors", "Platform Stakeholders"],
+    problem: {
+      context: "Banrural's banking platforms were built out across 5 business areas, each shipping UI independently — buttons, forms, and color usage diverged team to team. In a banking context, that inconsistency wasn't just visual noise; it multiplied QA cycles and slowed every engineering handoff.",
+      insight: "A style guide wasn't going to fix it. Teams needed infrastructure they could build on without re-deciding foundational UI choices every sprint — consistency had to live in the system itself, not in guidelines someone had to remember to follow.",
+      baseline: "5 business areas · no shared component library · token usage inconsistent across platforms",
+    },
+    discovery: {
+      research: "Audited existing UI patterns across all 5 business areas and reviewed how each team's design-to-engineering handoff actually worked in practice.",
+      keyInsights: [
+        "The same core components were being rebuilt independently in every business area, with small inconsistencies compounding over time",
+        "Engineering teams needed tokens they could consume directly in code — a component library was only as effective as its distance from the codebase",
+        "A system without a clear owner would drift back to inconsistency within a few release cycles — adoption required ongoing maintenance, not a one-time handoff",
+      ],
+    },
+    solution: {
+      approach: "A semantic token architecture underneath a centrally owned component library — consumed, not forked, by every business area — versioned, documented, and maintained as product infrastructure rather than a static style guide.",
+      architecture: [
+        "Semantic token layer — color, spacing, and typography tokens mapped to intent rather than raw values, so updates propagate without touching consuming teams' code",
+        "150+ components — built once, governed centrally, consumed across all 5 business areas",
+        "Contribution model — a clear path for teams to propose additions without fragmenting the system",
+        "Versioned releases — changes communicated and adopted deliberately, not pushed silently",
+      ],
+    },
+    design: {
+      direction: "Consistency-at-scale. Every component decision optimized for the team that inherits it eight months from now, not just the one shipping this sprint.",
+      iterations: [
+        { title: "V1: Shared Figma library only", rationale: "Component definitions lived in design files first. Rejected — teams kept hand-building in code, and drift crept back in within weeks." },
+        { title: "V2: Token-first, code-owned system (Final)", rationale: "Moved the source of truth into code-consumable tokens, with Figma as the documentation layer rather than the source. Drift stopped because there was nothing left to reinterpret. Shipped and maintained since." },
+      ],
+    },
+    implementation: {
+      specs: "150+ components documented and versioned on a semantic token architecture — color, spacing, typography, and elevation mapped to intent. Adopted across all 5 business areas.",
+      constraints: "Each business area ran on a different release cadence and risk tolerance for UI change. Solved with opt-in versioning — teams upgraded on their own schedule instead of a mandated cutover, which is what made adoption stick instead of stalling.",
+    },
+    outcomes: {
+      metrics: [
+        { label: "Business Areas Adopted", before: "0", after: "5", delta: "↑5" },
+        { label: "Component Library", before: "None", after: "150+ Components", delta: "Built & Owned" },
+        { label: "Token Architecture", before: "Ad hoc, per team", after: "Semantic, centralized", delta: "Systematized" },
+      ],
+      impact: "Aurora is the default starting point for new features across Banrural's platforms — teams build on shared infrastructure instead of re-deciding foundational UI choices every sprint.",
+    },
+    featured: true,
+  },
+  {
     id: "guro-box",
     slug: "guro-box",
     title: "GURO Box",
