@@ -95,14 +95,14 @@ export const caseStudies: CaseStudy[] = [
     year: "2025 – Present",
     role: "Design Systems Founder & Lead",
     timeline: "Ongoing — founded 2025 from zero, actively maintained",
-    team: ["Banca Personas (Web/Mobile)", "Canales Digitales", "Productos Internos", "Mercadeo", "Proveedores Externos"],
+    team: ["Personal Banking (Web/Mobile)", "Digital Channels", "Internal Products", "Marketing", "External Vendors"],
     problem: {
       context: "When I joined Banrural, no design system existed — nothing to inherit, no token library, no prior art. Every area, from personal banking to marketing, was shipping its own buttons, forms, and color usage independently. Aurora started as my own initiative, not a mandate.",
       insight: "A style guide wasn't going to fix it, and there was nothing to standardize yet — infrastructure had to be built from the ground up. The only way to earn adoption across 5 different areas was to prove the system's value in one area first, then expand.",
       baseline: "0 shared components before 2025 · 5 business areas each building UI independently · no token source of truth",
     },
     discovery: {
-      research: "Audited existing UI patterns across all 5 business areas — Banca Personas (web/mobile), Canales Digitales, Productos Internos, Mercadeo, and work delivered by Proveedores Externos — since no prior system existed to reference.",
+      research: "Audited existing UI patterns across all 5 business areas — Personal Banking (web/mobile), Digital Channels, Internal Products, Marketing, and work delivered by External Vendors — since no prior system existed to reference.",
       keyInsights: [
         "The same core components were being rebuilt independently in every area, with small inconsistencies compounding over time",
         "Engineering teams needed tokens they could consume directly in code — a component library was only as effective as its distance from the codebase",
@@ -112,11 +112,11 @@ export const caseStudies: CaseStudy[] = [
     solution: {
       approach: "A semantic token architecture underneath a centrally owned component library, built from zero and proven area by area — now consumed, not forked, across all 5 business areas, versioned and maintained as product infrastructure rather than a static style guide.",
       architecture: [
-        "Banca Personas (Web/Mobile) — Aurora's largest surface; web and mobile personal banking now share one component and token base instead of parallel UI implementations",
-        "Canales Digitales — every digital channel draws from the same source of truth, so a token or component update ships everywhere at once instead of channel by channel",
-        "Productos Internos — internal tools now inherit the same visual and interaction standards as customer-facing products, closing the gap between employee and customer experience",
-        "Mercadeo — campaigns and landing experiences are built on approved, on-brand components instead of recreated UI for every launch",
-        "Proveedores Externos — external vendors and agencies build against Aurora's documented components and tokens, so third-party work ships on-brand without a rebrand pass after delivery",
+        "Personal Banking (Web/Mobile) — Aurora's largest surface; web and mobile personal banking now share one component and token base instead of parallel UI implementations",
+        "Digital Channels — every digital channel draws from the same source of truth, so a token or component update ships everywhere at once instead of channel by channel",
+        "Internal Products — internal tools now inherit the same visual and interaction standards as customer-facing products, closing the gap between employee and customer experience",
+        "Marketing — campaigns and landing experiences are built on approved, on-brand components instead of recreated UI for every launch",
+        "External Vendors — external vendors and agencies build against Aurora's documented components and tokens, so third-party work ships on-brand without a rebrand pass after delivery",
       ],
     },
     design: {
@@ -128,7 +128,7 @@ export const caseStudies: CaseStudy[] = [
     },
     implementation: {
       specs: "150+ components documented and versioned on a semantic token architecture — color, spacing, typography, and elevation mapped to intent. Built from zero starting 2025, with no prior design system to build on. Adopted across all 5 business areas.",
-      constraints: "Banca Personas, Canales Digitales, Productos Internos, Mercadeo, and Proveedores Externos each ran on a different release cadence and risk tolerance for UI change. Solved with opt-in versioning — teams upgraded on their own schedule instead of a mandated cutover, which is what made adoption stick instead of stalling.",
+      constraints: "Personal Banking, Digital Channels, Internal Products, Marketing, and External Vendors each ran on a different release cadence and risk tolerance for UI change. Solved with opt-in versioning — teams upgraded on their own schedule instead of a mandated cutover, which is what made adoption stick instead of stalling.",
     },
     outcomes: {
       metrics: [
